@@ -14,10 +14,10 @@ app.get("/", function (req, res) {
 app.post('/upload', upload.single('file'), function (req, res) {
   const file = req.file
   const size = file.size
-  fs.unlink(uploadFolder + file.filename)
   res.json({
     size: size
   })
+  fs.unlink(uploadFolder + file.filename)
 })
 
 const listener = app.listen(port, function () {
