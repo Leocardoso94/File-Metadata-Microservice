@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to Glitch!</title>
+  <meta name="description" content="A cool thing made with Glitch">
+  <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      File Metadata Microservice
+    </h1>
+    <p>When I submit something, I will receive the file size in bytes within the JSON response.</p>
+  </header>
+
+  <main>
+    <b>User Story:</b>
+    <ol>
+      <li>I can submit a FormData object that includes a file upload.</li>
+      <li>When I submit something, I will receive the file size in bytes within the JSON response</li>
+    </ol>
+    <hr>
+    <br>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="file">Submit a file to view its filesize.</label> <br><br>
+      <input type="file" name="file" id="file">
+      <br><br>
+      <input type="submit" value="Send!">
+    </form>
+  </main>
+
+</body>
+
+</html>
